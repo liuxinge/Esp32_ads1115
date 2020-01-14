@@ -18,14 +18,16 @@ ads.setGain(GAIN_SIXTEEN);     16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125m
 
 The I2C address of ADS1115 depend on how it ADDR pin was connected:   
 
-ADDR PIN CONNECTION    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLAVE ADDRESS in Bin    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SLAVE ADDRESS in Hex  
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S
 
 GND    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                 1001000                 0x48  
 VDD                     1001001                 0x49  
 SDA                     1001010                 0x50  
 SCL                     1001011                 0x51  
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| ADDR PIN CONNECTION  | SLAVE ADDRESS in Bin |LAVE ADDRESS in Hex  |
+| ------------- | ------------- |----------|
+| GND |  1001000| 0x48|
+|  VDD| 1001001| 0x49|
+| SDA |  1001010| 0x50|
+| SCL |  1001011|  0x51|
