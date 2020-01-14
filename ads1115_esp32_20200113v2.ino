@@ -1,7 +1,8 @@
 #include <Wire.h>
 #include <Adafruit_ADS1015.h>
 
-
+// This is an funciton for Esp32 to connect 4 ads1115 chips and read each
+// chip to get each channel's input.
 
 void setup(void) 
 {
