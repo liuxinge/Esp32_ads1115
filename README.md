@@ -24,3 +24,8 @@ GND    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                 1001000               
 VDD                     1001001                 0x49  
 SDA                     1001010                 0x50  
 SCL                     1001011                 0x51  
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
