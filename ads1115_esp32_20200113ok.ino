@@ -2,12 +2,9 @@
 #include <Adafruit_ADS1015.h>
 
 Adafruit_ADS1115 ads(0x49);  /* Use this for the 16-bit version */
-//Adafruit_ADS1015 ads;     /* Use thi for the 12-bit version */
+//Adafruit_ADS1015 ads;     /* Use this for the 12-bit version */
 
 double gainFactor = 0.0001875;
-//const byte DEV_ADDR = 0x49;  
-//#define ADS1015_ADDRESS                 (0x49)    // 1001 000 (ADDR = GND)
-  
 
 void setup(void) 
 {
@@ -17,8 +14,6 @@ void setup(void)
   Serial.println("Getting single-ended readings from AIN0..3");
   Serial.println("ADC Range: +/- 6.144V (1 bit = 3mV/ADS1015, 0.1875mV/ADS1115)");
 
-  unsigned long gainFactor = 0.0001875;
-  
   // The ADC input range (or gain) can be changed via the following
   // functions, but be careful never to exceed VDD +0.3V max, or to
   // exceed the upper and lower limits if you adjust the input range!
