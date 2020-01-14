@@ -10,7 +10,7 @@ double gainFactor = 0.0001875;
 
 void setup(void) 
 {
-  Serial.begin(9r600);
+  Serial.begin(9600);
   Serial.println("Hello!");
   
   Serial.println("Getting single-ended readings from AIN0..3");
