@@ -16,8 +16,8 @@ ads.setGain(GAIN_FOUR);         4x gain   +/- 1.024V  1 bit = 0.5mV    0.03125mV
 ads.setGain(GAIN_EIGHT);        8x gain   +/- 0.512V  1 bit = 0.25mV   0.015625mV  
 ads.setGain(GAIN_SIXTEEN);     16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV  
 
-|&nbsp |   |  ADS1015 | ADS1115  |
-|-------|-------|--------------------  |
+|  |   |  ADS1015 | ADS1115  |
+|-------|-------|------------|--------  |
 |ads.setGain(GAIN_TWOTHIRDS);|   2/3x gain +/- 6.144V  |1 bit = 3mv |       0.1875mv (default) |   
 
 |ads.setGain(GAIN_ONE);|      1x gain   +/- 4.096V  | 1 bit = 2mv |       0.125mv |   
