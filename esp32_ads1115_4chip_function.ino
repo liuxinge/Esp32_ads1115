@@ -21,21 +21,20 @@ void ADS1115(void)
  int I2C_address = 0x48;
  
  for (int j = 0; j < 4; j++){
+   I2C_address = I2C_address + j;
+   Adafruit_ADS1115 ads(I2C_address);  /* Use this for the 16-bit version */
+   ads.begin();
 
-  I2C_address = I2C_address + j;
-  Adafruit_ADS1115 ads(I2C_address);  /* Use this for the 16-bit version */
-  ads.begin();
-
-  int16_t adcRaw;
+   int16_t adcRaw;
   
-  for(int i = 0; i < 4; i ++){ 
+   for(int i = 0; i < 4; i ++){ 
      adcRaw = ads.readADC_SingleEnded(i); 
      if (adcRaw < 0) {adcRaw = 0;}
      AinV[i+j*4] = gainFactor * adcRaw;
      Serial.print("AinV"); Serial.print(i+j*4); Serial.print(": ");Serial.println(AinV[i+j*4], 4);
 
     } 
-  Serial.println("");
- }
+   Serial.println("");
+  }
   delay(1000);
 }

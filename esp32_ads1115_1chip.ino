@@ -1,5 +1,7 @@
 #include <Wire.h>
 #include <Adafruit_ADS1015.h>
+// Forked form Adafruit, please buy open source hardware from 
+// Adafruit to support them.
 
 Adafruit_ADS1115 ads(0x49);  /* Use this for the 16-bit version */
 //Adafruit_ADS1015 ads;     /* Use this for the 12-bit version */
@@ -8,7 +10,7 @@ double gainFactor = 0.0001875;
 
 void setup(void) 
 {
-  Serial.begin(9600);
+  Serial.begin(9r600);
   Serial.println("Hello!");
   
   Serial.println("Getting single-ended readings from AIN0..3");
