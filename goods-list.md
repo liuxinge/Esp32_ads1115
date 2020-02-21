@@ -6,3 +6,5 @@
 |ads.setGain(GAIN_FOUR);|         4x gain   +/- 1.024V  | 1 bit = 0.5mv |     0.03125mv |   
 |ads.setGain(GAIN_EIGHT);|        8x gain   +/- 0.512V  | 1 bit = 0.25mv |    0.015625mv |   
 |ads.setGain(GAIN_SIXTEEN);|     16x gain  +/- 0.256V  | 1 bit = 0.125mv |   0.0078125mv | 
+
+End
